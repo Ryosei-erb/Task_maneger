@@ -1,0 +1,133 @@
+@import "bootstrap";
+@import "font-awesome";
+
+body {
+  font-family: 'Bitter', serif;
+  color: #333333;
+}
+
+.icon-a {
+  font-size: 30px;
+  text-align: right;
+}
+
+.icon-b {
+  font-size: 30px;
+  text-align: left;
+}
+
+.icon-c {
+  font-size: 30px;
+  color: #313131;
+  position: relative;
+  top: 10px;
+  left:5px;
+}
+
+.create-button {
+  color: #ffffff;
+  background-color: #FFB6C1;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 185px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 20px;
+  border: 3px solid #FFB6C1;
+}
+
+.create-button:hover {
+  background-color: #ffffff;
+  color: #FFB6C1;
+  border: 3px solid #FFB6C1;
+}
+
+.thead {
+  background-color: #FFF0F5;
+  border: 3px solid #FFF0F5;
+  text-align: center;
+
+}
+
+.edit-button-edit {
+  margin-left: 70px;
+  color: #ffffff;
+  background-color: #FFB6C1;
+  border: 3px solid #FFB6C1;
+  width: 60px;
+  height: 40px;
+  display: block;
+  text-align: center;
+}
+
+.edit-button-edit:hover {
+  color: #FFB6C1;
+  background-color: #ffffff;
+  border: 3px solid #FFB6C1;
+}
+
+.edit-button-back {
+  position: relative;
+  bottom: 39px;
+  height: 40px;
+  width: 60px;
+  display: block;
+}
+
+.edit-button-back:hover {
+  color: #00A5A5;
+  background-color: #ffffff;
+  border: 3px solid #00A5A5;
+}
+
+.border-bar {
+  border-bottom: 1px solid #cccccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.content {
+  position: relative;
+  bottom: 5px;
+}
+
+.search-button {
+  color: #ffffff;
+  background-color: #FFB6C1;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 185px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 20px;
+  border: 3px solid #FFB6C1;
+}
+
+.search-button:hover {
+  background-color: #ffffff;
+  color: #FFB6C1;
+  border: 3px solid #ffffff;
+}
+
+.search-label {
+  color: #cccccc;
+  font-size: 18px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
