@@ -63,3 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "bootstrap"
 gem "font-awesome-rails"
 gem "ransack"
+gem "rails-controller-testing"

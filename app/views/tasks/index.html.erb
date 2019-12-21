@@ -1,9 +1,18 @@
+<% if @task.errors.present? %>
+  <ul>
+    <% @task.errors.full_messages.each do |msg| %>
+      <li><$= msg %></li>
+    <% end %>
+  </ul>
+
+<% end %>
+
 
 <div class="container">
   <div class="row p-5">
     <div class="col-md-4 mb-auto">
       <div class="search-form">
-        <%= search_form_for(@q, class: "mb-5") do |f| %>
+        <%= search_form_for(@q, class:"mb-5") do |f| %>
           <div class="form-group">
             <%= f.label "Search", class:"search-label" %>
             <%= f.search_field :name_cont, class:"form-control border-bar" , placeholder: "..." %>
@@ -21,7 +30,6 @@
           <%= f.submit "Create", class: "create-button" %>
         <% end %>
       </div>
-
     </div>
     <div class="col-md-8">
       <table class="table table-hover">
@@ -35,13 +43,13 @@
         <% @tasks.each do |task| %>
           <tbody>
             <tr class="content">
-              <td><%= task.name  %></td>
-              <td>
+              <td class="col-md-8"><%= task.name  %></td>
+              <td class="col-md-2">
                   <%= link_to edit_task_path(task),class:"btn btn-floating" do %>
                     <%= fa_icon "edit lg", class:"icon-a" %>
                   <% end %>
                </td>
-               <td>
+               <td class="col-md-2">
                   <%= link_to task_path(task), method: :delete, class:"btn btn-floating" ,data: { confirm: "Sure?"} do %>
                     <%= fa_icon "trash lg", class:"icon-b" %>
                   <% end %>
